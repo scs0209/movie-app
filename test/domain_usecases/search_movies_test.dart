@@ -1,13 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:movix/domain/entities/Movie.dart';
-import 'package:movix/domain/repositories/movie_repository.dart';
 import 'package:movix/domain/usecases/search_movies.dart';
 
 import 'get_trending_movies_test.mocks.dart';
 
-@GenerateNiceMocks([MockSpec<MovieRepository>()])
 void main() {
   late SearchMovies usecase;
   late MockMovieRepository mockMovieRepository;
